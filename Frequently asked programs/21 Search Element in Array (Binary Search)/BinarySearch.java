@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class BinarySearch{
 
@@ -29,5 +31,13 @@ public class BinarySearch{
 			}
 		}
 		if(flag==false){System.out.println("Element not found");}
+	
+		// approach 2 : built in method Arrays.binarySearch()
+
+		System.out.println();
+		System.out.println("Search using built in array method");
+		System.out.println("Found at position "+Arrays.binarySearch(a,50));
+		System.out.println(a[Arrays.binarySearch(a,50)]);
+
 	}
 }
