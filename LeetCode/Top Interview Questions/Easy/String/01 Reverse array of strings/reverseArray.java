@@ -1,8 +1,6 @@
 public class reverseArray{
-	public static void main(String[] args) {
-		reverseString(["h","e","l","l","o"]);
-	}
-	public void reverseString(char[] s){
+	
+	public char[] reverseString(char[] s){
 		int left=0;
 		int right=s.length-1;
 		char temp;
@@ -16,5 +14,15 @@ public class reverseArray{
 			left++;
 			right--;
 		}
+
+		return s;
+	}
+
+	public static void main(String[] args) {
+		reverseArray obj = new reverseArray();
+
+		char[] s = {'h','e','l','l','o'};
+
+		System.out.println(obj.reverseString(s));
 	}
 }
