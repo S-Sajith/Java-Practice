@@ -1,6 +1,6 @@
 public class LastUniqueCharacter {
  public static void main(String[] args) {
-  String str = "Hello World!";
+  String str = "gibblegabbler";
   char lastUniqueChar = ' ';
 
   for (int i = 0; i < str.length(); i++) {
